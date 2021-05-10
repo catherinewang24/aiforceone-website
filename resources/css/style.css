@@ -1,0 +1,57 @@
+ /*{ border: 1px solid black; } */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------------------------*/
+/* ---------Navigation---------*/
+/* ----------------------------*/
+.nav-logo {                               /* To change the size of the logo*/
+    max-height: 80px;
+    padding: 0;
+}
+
+
+/* ----------------------------*/
+/* ----------Cards-------------*/
+/* ----------------------------*/
+
+.card {
+    border: none;
+    outline: none;
+    border-radius: 15px; 
+}
+
+.cards .card-clear {
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.cards .card-blue {
+    background-color:#C1D0EE;
+}
+
+.cards .card-pink {
+    background-color:#EEDBD7;
+}
+
+.cards .card-grey {
+    background-color:#E6E5E5;
+}
+
+
+
+
+/* ----------------------------*/
+/* -------Media Queries--------*/
+/* ----------------------------*/
+
+@media (min-width: 992px) {
+
+.card-columns {
+      column-count: 2;
+    }
+}
