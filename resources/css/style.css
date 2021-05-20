@@ -1,19 +1,114 @@
  /*{ border: 1px solid black; } */
 
 
-* {
-    margin: 0;
-    padding: 0;
+
+/* ----------------------------*/
+/* -----------Fonts------------*/
+/* ----------------------------*/
+
+
+h1, h2, h3, h4, h5 {
+    color: #54575a;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+p {
+    color: #6e7272;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding-right: 150px;
+}
+
+.introduction p, .crypto p {
+    font-size: 1.2rem;
+}
+
+.intro-text p {
+    padding-right: 50px;
+}
+
+.p-bold-sm {
+    color: #54575a;
+    font-weight: 500;
+}
 
 /* ----------------------------*/
 /* ---------Navigation---------*/
 /* ----------------------------*/
+
+.navbar-light .navbar-nav .nav-link {                   /* Overiding Bootstrap to change the color font of the navbar links for .navbar-light class*/
+    color: #333333;
+}
+
 .nav-logo {                               /* To change the size of the logo*/
-    max-height: 80px;
+    max-height: 35px;
     padding: 0;
 }
+
+.navbar {                                               /* To change navbar colour and make it a little transparent*/
+    background-color:#fff;
+}
+
+.navbar-nav > li{                          /* To add more white space on the left and right of the links in the navbar*/
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.navbar-toggler {                          /* To turn off the navbar-toggler border (hamburger icon on smartphones) */
+    border: none;
+    outline: none;
+}
+
+/* ----------------------------*/
+/* ---------Jumbotron----------*/
+/* ----------------------------*/
+
+.jumbotron {
+    background-image: url('../images/jumbotron/hero-image-01.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.short-margin {                            /* To add more space on right side of hero text*/
+    padding-right: 650px;
+}
+
+
+/* ----------------------------*/
+/* -------Introduction---------*/
+/* ----------------------------*/
+
+.margin-b {
+    margin-bottom: 2.5rem;
+}
+
+
+
 
 
 /* ----------------------------*/
@@ -23,35 +118,256 @@
 .card {
     border: none;
     outline: none;
-    border-radius: 15px; 
 }
 
-.cards .card-clear {
+.card-columns {  
+    column-gap: 30px;                   /*To make vertical gap between the card columns wider*/
+}
+
+.card-columns .card {                   /*To make horizontal gap between the card columns wider*/
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 0rem;
+}
+
+.card-blue, .card-pink, .card-yellow{
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+.card-clear {
     background-color: rgba(250, 235, 215, 0);
 }
 
-.cards .card-blue {
+.card-blue {
     background-color:#C1D0EE;
 }
 
-.cards .card-pink {
-    background-color:#EEDBD7;
+.card-yellow {
+    background-color:#ffedb2;
 }
 
-.cards .card-grey {
-    background-color:#E6E5E5;
+.card-pink{
+    background-color:#eedbd7;
 }
 
 
+
+/* ----------------------------*/
+/* ----------Crypto------------*/
+/* ----------------------------*/
+
+.crypto {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+/* ----------------------------*/
+/* -------IT Services----------*/
+/* ----------------------------*/
+
+.it-consulting, .analytics-consulting {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+
+.it-consulting {
+    background-color: #C1D0EE;
+    border-radius: 15px;
+}
+
+.analytics-consulting {
+    background-color: #E6E5E5;
+    border-radius: 15px;
+}
+
+/* ----------------------------*/
+/* -----Customer Support-------*/
+/* ----------------------------*/
+
+.customer, .safety, .contact {
+    margin-top:140px;
+    margin-bottom: 140px;
+}
+
+
+/* ----------------------------*/
+/* ---------Clients------------*/
+/* ----------------------------*/
+
+.clients {
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+
+
+/* ----------------------------*/
+/* ----------Contact-----------*/
+/* ----------------------------*/
+
+.form-control, .custom-select {
+    border-radius: 2rem;
+    height: 3.5rem;
+    padding: .75rem 1.5rem;
+}
+
+/* ----------------------------*/
+/* ----------Buttons-----------*/
+/* ----------------------------*/
+
+/* ----------Primary Button (jumbotron button)-----------*/
+
+.btn-primary {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-primary */
+    background-color: #f6be00; 
+    border-color: #f6be00;
+    color: #fff;
+    margin-top: 10px;                       /* to add a margin on top of button*/
+    font-weight: 500;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    border-color: #d4a400;                /* colour going down increments of two*/
+    background-color: #d4a400;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-primary:active:hover {
+    border-color: #b28a00;
+    background-color: #b28a00;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+/* ----------Secondary Button (navigation button)-----------*/
+
+.btn-secondary {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary, changed colors down in increments of 2 */
+    background-color: #f6be00;
+    border-color: #f6be00;
+    color: #fff;
+    min-width: 100px;
+}
+
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+    border-color: #d4a400;
+    background-color: #d4a400;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-secondary:active:hover {
+    border-color: #b28a00;
+    background-color: #b28a00;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+/* ----------Submit Button-----------*/
+
+.btn-light {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary, changed colors down in increments of 2 */
+    background-color: #184cf9;
+    border-color: #184cf9;
+    color: #fff;
+    min-width: 100px;
+    height: 3.5rem;
+}
+
+.btn.btn-light:hover,
+.btn.btn-light:focus {
+    border-color: #063ae9;
+    background-color: #063ae9;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-light:active:hover {
+    border-color: #0532c8;
+    background-color: #0532c8;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
 
 
 /* ----------------------------*/
 /* -------Media Queries--------*/
 /* ----------------------------*/
 
+
+/* max-width: 768px = up to tablet screen size. I cut all the desktop px in half, eg: margin-bottom: 60px on desktop, margin-bottom: 30px on tablet and under*/
+@media (max-width: 767.98px) {
+    .card-columns {
+        column-count: 1;
+      }
+
+    .clients .fixed-width {
+        height: auto;
+        max-width: 150px;
+    
+    }
+}
+
+
+
+/* min-width: 992px = desktops, 992px and up*/
 @media (min-width: 992px) {
 
 .card-columns {
       column-count: 2;
     }
+
+.shrink-padding {                       /* To reduce the width of the text on the right side in the concepts section on desktop*/
+    padding-right: 15%;
+    }
+
+.shrink-padding-l {
+    padding-left: 15%;
+}
+
+.intro-text {
+    padding-right: 100px;
+}
+
+.it-text {
+    padding-right: 4rem;
+} 
+
+ /* To create a smaller width than the original "container" from bootstrap only on desktop*/
+
+.small-container {                 
+        max-width: 1000px;
+    }
+
+.smaller-container {
+    max-width: 700px;
+}
+    
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 767.98px) and (max-width: 991.98px) {          
+
+    .card-columns {
+        column-count: 2;
+      }
+
 }
