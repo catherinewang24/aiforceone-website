@@ -38,7 +38,6 @@ p {
 .jumbotron p {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    padding-right: 150px;
 }
 
 .introduction p, .crypto p {
@@ -84,7 +83,7 @@ p {
 /* ----------------------------*/
 /* ---------Jumbotron----------*/
 /* ----------------------------*/
-
+/*
 .jumbotron {
     background-image: url('../images/jumbotron/hero-image-01.png');
     background-size: cover;
@@ -92,13 +91,15 @@ p {
     background-repeat: no-repeat;
     padding-top: 20%;
     padding-bottom: 20%;
-}
-
-.short-margin {                            /* To add more space on right side of hero text*/
+}*/
+/*
+.short-margin {                             To add more space on right side of hero text
     padding-right: 650px;
+}*/
+
+.jumbotron {
+    background-color: #F9F8F7;
 }
-
-
 /* ----------------------------*/
 /* -------Introduction---------*/
 /* ----------------------------*/
@@ -106,6 +107,7 @@ p {
 .margin-b {
     margin-bottom: 2.5rem;
 }
+
 
 
 
@@ -342,10 +344,6 @@ p {
     padding-left: 15%;
 }
 
-.intro-text {
-    padding-right: 100px;
-}
-
 .it-text {
     padding-right: 4rem;
 } 
@@ -359,6 +357,10 @@ p {
 .smaller-container {
     max-width: 700px;
 }
+
+.jumbotron p {
+    padding-right: 150px;
+}
     
 }
 
@@ -371,3 +373,10 @@ p {
       }
 
 }
+
+@media (max-width: 991.98px) {
+    .intro-phone-margin {
+        margin-bottom: 50px;
+    }
+}
+
