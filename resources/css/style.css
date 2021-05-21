@@ -61,6 +61,7 @@ p {
     color: #333333;
 }
 
+
 .nav-logo {                               /* To change the size of the logo*/
     max-height: 35px;
     padding: 0;
@@ -99,6 +100,7 @@ p {
 
 .jumbotron {
     background-color: #F9F8F7;
+    margin-bottom: 0;
 }
 /* ----------------------------*/
 /* -------Introduction---------*/
@@ -107,7 +109,6 @@ p {
 .margin-b {
     margin-bottom: 2.5rem;
 }
-
 
 
 
@@ -146,15 +147,15 @@ p {
 }
 
 .card-blue {
-    background-color:#C1D0EE;
+    background-color:#C1D0EE;    
 }
 
 .card-yellow {
-    background-color:#ffedb2;
+    background-color:#ffedb2;      
 }
 
 .card-pink{
-    background-color:#eedbd7;
+    background-color:#eedbd7;      
 }
 
 
@@ -163,17 +164,14 @@ p {
 /* ----------Crypto------------*/
 /* ----------------------------*/
 
-.crypto {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
+
 
 
 /* ----------------------------*/
 /* -------IT Services----------*/
 /* ----------------------------*/
 
-.it-consulting, .analytics-consulting {
+.it-consulting {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 2rem;
@@ -181,11 +179,6 @@ p {
 
 
 .it-consulting {
-    background-color: #C1D0EE;
-    border-radius: 15px;
-}
-
-.analytics-consulting {
     background-color: #E6E5E5;
     border-radius: 15px;
 }
@@ -194,10 +187,11 @@ p {
 /* -----Customer Support-------*/
 /* ----------------------------*/
 
-.customer, .safety, .contact {
-    margin-top:140px;
-    margin-bottom: 140px;
+.introduction, .crypto, .customer, .safety, .contact {
+    margin-top:150px;
+    margin-bottom: 150px;
 }
+
 
 
 /* ----------------------------*/
@@ -361,6 +355,14 @@ p {
 .jumbotron p {
     padding-right: 150px;
 }
+
+.card-columns .card-clear {         /* To add a margin on the bottom of the card-clear AKA the title of the crypto*/
+    margin-bottom: 80px;
+}
+
+.contact-form {
+    padding-left: 100px;
+}
     
 }
 
@@ -368,15 +370,31 @@ p {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 767.98px) and (max-width: 991.98px) {          
 
-    .card-columns {
-        column-count: 2;
+    .card-columns {                 
+        column-count: 1;
       }
 
 }
 
 @media (max-width: 991.98px) {
     .intro-phone-margin {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .customer .fixed-width,
+    .safety .fixed-width {     /* To make the images in "Customer" and "Safety" section not responsive and fixed width instead, so when you shrink the browser, the image doesn't scale up*/
+        height: auto;
+        max-width: 280px;
+    }
+
+    .it-consulting .fixed-width,
+    .contact .fixed-width {     /* To make the images in "IT" section not responsive and fixed width instead, so when you shrink the browser, the image doesn't scale up*/
+        height: auto;
+        max-width: 380px;
     }
 }
 
