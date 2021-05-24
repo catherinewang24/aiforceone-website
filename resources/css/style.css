@@ -1,6 +1,8 @@
  /*{ border: 1px solid black; } */
 
-
+body {
+    background-color: #F9F8F7;
+}
 
 /* ----------------------------*/
 /* -----------Fonts------------*/
@@ -101,6 +103,7 @@ p {
 .jumbotron {
     background-color: #F9F8F7;
     margin-bottom: 0;
+    border-radius: 0;
 }
 /* ----------------------------*/
 /* -------Introduction---------*/
@@ -121,6 +124,7 @@ p {
 .card {
     border: none;
     outline: none;
+    border-radius: 15px;
 }
 
 .card-columns {  
@@ -135,9 +139,7 @@ p {
     padding: 0rem;
 }
 
-.card-blue, .card-pink, .card-yellow{
-    height: 500px;
-    width: auto;
+.card-blue, .card-yellow, .card-green{
     border-radius: 15px;
     padding: 3rem;
 }
@@ -150,12 +152,12 @@ p {
     background-color:#C1D0EE;    
 }
 
-.card-yellow {
-    background-color:#ffedb2;      
+.card-green {
+    background-color:#b5d4cc;      
 }
 
-.card-pink{
-    background-color:#eedbd7;      
+.card-yellow{
+    background-color:#ffedb2;                        /* eedbd7;       */
 }
 
 
@@ -166,30 +168,29 @@ p {
 
 
 
-
 /* ----------------------------*/
 /* -------IT Services----------*/
 /* ----------------------------*/
 
 .it-consulting {
-    margin-top: 20px;
-    margin-bottom: 20px;
     padding: 2rem;
-}
-
-
-.it-consulting {
     background-color: #E6E5E5;
     border-radius: 15px;
 }
+
+.it-services {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 /* ----------------------------*/
 /* -----Customer Support-------*/
 /* ----------------------------*/
 
 .introduction, .crypto, .customer, .safety, .contact {
-    margin-top:150px;
-    margin-bottom: 150px;
+    margin-top:210px;
+    margin-bottom: 210px;
 }
 
 
@@ -338,10 +339,11 @@ p {
     padding-left: 15%;
 }
 
+ /*
 .it-text {
     padding-right: 4rem;
 } 
-
+*/
  /* To create a smaller width than the original "container" from bootstrap only on desktop*/
 
 .small-container {                 
@@ -349,7 +351,7 @@ p {
     }
 
 .smaller-container {
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .jumbotron p {
@@ -396,5 +398,13 @@ p {
         height: auto;
         max-width: 380px;
     }
+
+    .crypto .fixed-width {
+        height: auto;
+        max-width: 360px;
+    }
 }
 
+@media (min-width: 991.98px) {
+
+}
