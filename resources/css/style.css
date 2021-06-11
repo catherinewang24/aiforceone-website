@@ -34,7 +34,7 @@ h4 {
 }
 
 p {
-    color: #6e7272;
+    color: #54575a;
 }
 
 .jumbotron p {
@@ -53,14 +53,19 @@ p {
 .p-bold-sm {
     color: #54575a;
     font-weight: 500;
+    font-size: 1.3rem;
 }
 
 /* ----------------------------*/
 /* ---------Navigation---------*/
 /* ----------------------------*/
 
-.navbar-light .navbar-nav .nav-link {                   /* Overiding Bootstrap to change the color font of the navbar links for .navbar-light class*/
-    color: #333333;
+a {
+    color: #5c5f63;
+}
+
+a:hover {
+    color: #3b3e40;
 }
 
 
@@ -144,22 +149,28 @@ p {
     padding: 3rem;
 }
 
+
+
 .card-clear {
     background-color: rgba(250, 235, 215, 0);
 }
 
 .card-blue {
-    background-color:#C1D0EE;    
+    background-color: #adbffd;    
 }
 
 .card-green {
-    background-color:#b5d4cc;      
+    background-color:#B5D4CC;      
 }
 
 .card-yellow{
-    background-color:#ffedb2;                        /* eedbd7;       */
+    background-color:#EEEDEA;                      /* eedbd7; yellow:#ffedb2   blue:#C1D0EE   green:b5d4cc  */
 }
 
+
+.white-text {
+    margin-right: 7rem;
+}
 
 
 /* ----------------------------*/
@@ -174,23 +185,40 @@ p {
 
 .it-consulting {
     padding: 2rem;
-    background-color: #E6E5E5;
+    background-color: #E6E5E5; /*#E6E5E5 dfe6fe*/
+    border-radius: 15px;
+}
+
+.analytics-consulting {
+    padding: 2rem;
+    background-color: #fff1c3; 
     border-radius: 15px;
 }
 
 .it-services {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
+.it-services .row {                             /*There was no padding for the it services cards so the card would go directly to the screen edge. I played around in the developer tools and found out the combination of padding and margin. */
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.it-services .col-lg-9 {                       /*There was no padding for the it services cards so the card would go directly to the screen edge. I played around in the developer tools and found out the combination of padding and margin. */
+    padding-right: 0;
+    padding-left: 0;
+}
 
 /* ----------------------------*/
 /* -----Customer Support-------*/
 /* ----------------------------*/
 
 .introduction, .crypto, .customer, .safety, .contact {
-    margin-top:210px;
-    margin-bottom: 210px;
+    margin-top:220px;
+    margin-bottom: 220px;
 }
 
 
