@@ -168,10 +168,6 @@ a:hover {
 }
 
 
-.white-text {
-    margin-right: 7rem;
-}
-
 
 /* ----------------------------*/
 /* ----------Crypto------------*/
@@ -393,6 +389,10 @@ a:hover {
 .contact-form {
     padding-left: 100px;
 }
+
+.white-text {
+    margin-right: 7rem;
+}
     
 }
 
@@ -402,8 +402,9 @@ a:hover {
 
     .card-columns {                 
         column-count: 1;
-      }
-
+    }
+    
+    
 }
 
 @media (max-width: 991.98px) {
