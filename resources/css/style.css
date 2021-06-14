@@ -20,16 +20,16 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h4 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
 }
 
@@ -62,6 +62,7 @@ p {
 
 a {
     color: #5c5f63;
+    font-weight: 700;
 }
 
 a:hover {
@@ -76,6 +77,7 @@ a:hover {
 
 .navbar {                                               /* To change navbar colour and make it a little transparent*/
     background-color:#fff;
+    padding: 1rem 1rem;                        /* To add padding on top and bottom, left and right of navbar*/
 }
 
 .navbar-nav > li{                          /* To add more white space on the left and right of the links in the navbar*/
@@ -212,21 +214,18 @@ a:hover {
 /* -----Customer Support-------*/
 /* ----------------------------*/
 
-.introduction, .crypto, .customer, .safety, .contact {
-    margin-top:220px;
-    margin-bottom: 220px;
-}
 
+/*Mobile and up to laptop margintop and bottom */
+.introduction, .crypto, .customer, .safety, .contact, .clients { 
+    margin-top: 8.6rem;
+    margin-bottom: 8.6rem;
+}
 
 
 /* ----------------------------*/
 /* ---------Clients------------*/
 /* ----------------------------*/
 
-.clients {
-    margin-top: 350px;
-    margin-bottom: 350px;
-}
 
 
 
@@ -247,7 +246,7 @@ a:hover {
 /* ----------Primary Button (jumbotron button)-----------*/
 
 .btn-primary {
-    border-radius: 23px;                    /* to form a "pill" shape from btn-primary */
+    border-radius: 30px;                    /* to form a "pill" shape from btn-primary */
     background-color: #f6be00; 
     border-color: #f6be00;
     color: #fff;
@@ -344,6 +343,42 @@ a:hover {
         max-width: 150px;
     
     }
+
+    /* font size originally 3.8rem i went down a whole number and made it 2.8rem*/
+    h1 {
+        font-weight: 700;
+        font-size: 2.1rem;
+    }
+    
+    h2 {
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .introduction p, .crypto p {
+        font-size: 1rem;
+    }
+    
+    .intro-text p {
+        padding-right: 50px;
+    }
+    
+    .p-bold-sm {
+        color: #54575a;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
 }
 
 
@@ -398,6 +433,10 @@ a:hover {
     margin-bottom: 1.5rem;
 
 }
+
+.btn-primary {
+    padding: .7rem 2.3rem;          /* To add padding on the "contact us" button on jumbotron*/
+}
     
 }
 
@@ -439,6 +478,14 @@ a:hover {
     }
 }
 
-@media (min-width: 991.98px) {
-
+@media (min-width: 768px) {
+    .introduction, .crypto, .customer, .safety, .contact {
+        margin-top:210px;
+        margin-bottom: 210px;
+    }
+    
+    .clients {
+        margin-top: 350px;
+        margin-bottom: 370px;
+    }
 }
