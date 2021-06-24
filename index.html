@@ -13,12 +13,13 @@
         <link rel="stylesheet" href="resources/css/style.css">
 
         <title>AIForceOne</title>
+        
     </head>
 
     <body>
 
-        <!--Sticky Navigation bar w/ responsive collapse toggler-->
-        <nav class="navbar navbar-expand-md sticky-top">
+        <!--Sticky Navigation bar w/ responsive collapse toggler -->
+        <nav class="navbar navbar-expand-md sticky-top navbar-light">
                 <a class="navbar-brand" href="#">
                     <img class="nav-logo" src="resources/images/logo/logo-white-background.png" alt="AIForceOne Logo">
                 </a>
@@ -30,20 +31,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown text-center text-lg-left">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Cryptocurrency</a>
-                                <a class="dropdown-item" href="#">IT</a>
+                            <div class="dropdown-menu text-center text-lg-left" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#crypto">Cryptocurrency</a>
+                                <a class="dropdown-item" href="#it">IT</a>
                             </div>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link btn btn-secondary" href="#" role="button">Contact us</a>
+                            <a class="nav-link btn btn-secondary white-link" href="#contact" role="button">Contact us</a>
                         </li>
 
                     </ul>
@@ -55,12 +52,17 @@
             <div class="container short-margin">
                 <div class="row">
                     <div class="col-lg-5 my-auto text-center text-lg-left">
-                        <h1>Jump into the AI ecosystem </h1>
+                        <h1>Unite with AI</h1> <!--Jump into the AI ecosystem, stay connected with ai, connect with ai, ai is around us, Be an AI ally-->
                         <p>Expert blockchain solutions to meet your every need.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Contact us</a>
+                        <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact us</a>
                     </div>
                     <div class="col-lg-7 hero-image my-auto">
-                        <img src="resources/images/jumbotron/hero-image-7.png" class="img-fluid" alt="hero image">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <!-- <img src="resources/images/customer-service/contact-4.png" class="img-fluid" alt="floating laptop"> -->
+                            <video autoplay playsinline muted loop class="embed-responsive-item">  <!-- autoplay will only work when it's MUTED. Playsinline will let video play on mobile devices-->
+                                <source src="resources/video/hero/hq-h264-160.mp4" type="video/mp4">
+                            </video>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -70,56 +72,52 @@
         <section class="container introduction">
             <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-5 my-auto text-center text-lg-left">
-                    <div class="margin-b">
-                        <h2>The AI future starts with us</h2>
-                        <p>Founded in 2014, AIForceOne is one of the top leading companies in the blockchain space.</p>
-                    </div>
                     <div>
-                        <h2>Let us tackle the challenges</h2>
-                        <p>Our team of software engineers will personally enrich your experience with innovative solutions.</p>
+                        <h2 class="mb-4">Let us tackle the challenges</h2>
+                        <p class="both-padded-text">As one of the top companies in the blockchain space, our team strives to create innovative solutions for every obstacle.</p>
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <img src="resources/images/introduction/team-5.png" class="img-fluid intro-phone-margin" alt="AIF Team photo">
+                    <img src="resources/images/introduction/team-7.png" class="img-fluid intro-phone-margin" alt="AIF Team photo">
                 </div>
             </div>
         </section>
 
         <!--Cryptocurrency Services-->
-        <section class="container cards crypto">
+        <section class="container cards crypto" id="crypto">
             <div class="card-columns">
 
                 <div class="card card-clear">
                     <div class="card-body text-center text-lg-left">
-                        <h2 class="card-title">Build your assets</h2>
-                        <p class="p-bold-sm mt-3">Products and services for all your crypto needs.</p>
+                        <h2 class="card-title mb-4">Build your assets</h2>
+                        <p>Investing into crypto has never been made easier.</p> <!--Products and services catered for you and your crypto investments.-->
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-body card-yellow text-center text-lg-left">
-                        <h3 class="card-title white-text">All-in-One</h3>
-                        <p class="p-bold-sm white-text mt-3">We do the work, you earn rewards</p>
-                        <p class="white-text">Monitor your rewards through our easy to navigate trading platform.</p>
+                    <div class="card-body card-grey text-center text-lg-left">
+                        <h3 class="card-title padded-text">All-in-One</h3>
+                        <p class="p-bold-sm mt-3">We do the work, you earn rewards</p>
+                        <p class="padded-text">Monitor your rewards through our easy to navigate trading platform.</p>
                         <div class="text-center">
                             <img src="resources/images/crypto/all-in-one-8.png" class="img-fluid" alt="Metal basket with items inside">
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-body card-yellow text-center text-lg-left">
-                        <h3 class="card-title white-text">ETH 2.0 Staking</h3>
-                        <p class="p-bold-sm white-text mt-3">Stake Ether and earn high PoS</p>
-                        <p class="white-text">Run nodes and stake ETH in our specialized AIF network.</p>
+                    <div class="card-body card-grey text-center text-lg-left">
+                        <h3 class="card-title padded-text">ETH Staking</h3>
+                        <p class="p-bold-sm padded-text mt-3">Stake Ether and earn high PoS</p>
+                        <p class="padded-text">Run nodes and stake ETH 2.0 in our specialized AIF network.</p>
                         <div class="text-center">
                             <img src="resources/images/crypto/ether-7.png" class="img-fluid" alt="Ether">
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-body card-yellow text-center text-lg-left">
-                        <h3 class="card-title white-text">Crypto Exchange</h3>
-                        <p class="p-bold-sm white-text mt-3">Buy, sell, and trade your crypto</p>
-                        <p class="white-text">Build your crypto portfolio with our safe and secure AIF Exchange.</p>
+                    <div class="card-body card-grey text-center text-lg-left">
+                        <h3 class="card-title padded-text">Crypto Exchange</h3>
+                        <p class="p-bold-sm padded-text mt-3">Buy, sell, and trade your crypto</p>
+                        <p class="padded-text">Build your crypto portfolio with our safe and secure AIF Exchange.</p>
                         <div class="text-center">
                             <img src="resources/images/crypto/exchange-graph-17.png" class="img-fluid" alt="Exchange graph">
                         </div>
@@ -130,11 +128,11 @@
         </section>
 
         <!--IT Services-->
-        <section class="container">
+        <section class="container it-main" id="it">
             <div class="row">
                 <div class="col-lg-12 text-center text-lg-left">
-                    <h2>We can take a challenge</h2>
-                    <p class="p-bold-sm">Our software engineers will cater to all your IT needs.</p>
+                    <h2 class="mb-4">We can take a challenge</h2>
+                    <p>Leave the programming to our software engineers.</p> <!-- Our software engineers will cater to your programming needs. -->
                 </div>
             </div>
         </section>
@@ -146,11 +144,11 @@
                         <div class="row card-body it-consulting flex-column-reverse flex-lg-row">
                             <div class="col-lg-5 my-auto it-text text-center text-lg-left">
                                 <h3>IT Consulting</h3>
-                                <p class="p-bold-sm mt-3">Solutions for any IT-related challenges</p>
-                                <p>We design IT infrastructure using innovative strategies to plan and budget your every need.</p>
+                                <p class="p-bold-sm mt-3">Azure, ETL, and more </p>  <!-- Solutions for any IT-related challenges, Cloud computing, data migration, and more -->
+                                <p class="both-padded-text">We design IT infrastructure using innovative strategies to plan and budget your every need.</p>
                             </div>
                             <div class="col-lg-7 text-center">
-                            <img src="resources/images/IT/cloud-3.png" class="img-fluid" alt="cloud">
+                            <img src="resources/images/IT/cloud-4.png" class="img-fluid" alt="cloud">
                             </div>
                         </div>
                     </div>
@@ -166,10 +164,10 @@
                             <div class="col-lg-5 my-auto it-text text-center text-lg-left">
                                 <h3>Analytics Consulting</h3>
                                 <p class="p-bold-sm mt-3">Big Data, Power BI, and more</p>
-                                <p>We analyze the full life cycle of a project and develop innovative business solutions.</p>
+                                <p class="both-padded-text">We analyze the full life cycle of a project and develop innovative business solutions.</p>
                             </div>
                             <div class="col-lg-7 text-center">
-                                <img src="resources/images/IT/data-6.png" class="img-fluid" alt="data graph">
+                                <img src="resources/images/IT/data-9.png" class="img-fluid" alt="data graph">
                             </div>
                         </div>
                     </div>
@@ -183,8 +181,8 @@
             <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6 my-auto shrink-padding text-center text-lg-left">
                     <h2>We are always here to help</h2>
-                    <p class="p-bold-sm mt-3">Quick response to incoming issues</p>
-                    <p>We provide end-to-end solutions for all of your technical needs.</p>
+                    <p class="p-bold-sm mt-3 both-padded-text">Quick response to incoming issues</p>
+                    <p class="both-padded-text">We provide end-to-end solutions for all of your technical needs.</p>
                 </div>
                 <div class="col-lg-6 text-center">
                     <img src="resources/images/customer-service/messages-5.png" class="img-fluid fixed-width" alt="chat bubbles">
@@ -200,8 +198,8 @@
                 </div>
                 <div class="col-lg-6 my-auto shrink-padding-l text-center text-lg-left">
                     <h2>Security is our top priority</h2>
-                    <p class="p-bold-sm mt-3">You don't need to think twice</p>
-                    <p>All financial information on our platform is encrypted and protected for your safety.</p>
+                    <p class="p-bold-sm mt-3 both-padded-text">You don't need to think twice</p>
+                    <p class="both-padded-text">All financial information on our platform is encrypted and protected for your safety.</p>
                 </div>
             </div>
         </section>
@@ -238,18 +236,18 @@
         </section>
 
 
-        <section class="container contact">
+        <section class="container contact small-container" id="contact">
             <div class="row">
 
                 <div class="col-12 text-center contact-header">
                     <h2>What are you waiting for?</h2>
-                    <p class="p-bold-sm mt-4">Send us a message and we will get back to you soon.</p>
+                    <p class="mt-4">Send us a message, we will get back to you shortly.</p>
                 </div>
 
                 <div class="col-lg-5 text-center">
                     <div class="embed-responsive embed-responsive-1by1">
                        <!-- <img src="resources/images/customer-service/contact-4.png" class="img-fluid" alt="floating laptop"> -->
-                       <video autoplay playsinline muted loop class="embed-responsive-item">  <!-- autoplay will only work when it's MUTED -->
+                       <video autoplay playsinline muted loop class="embed-responsive-item">  <!-- autoplay will only work when it's MUTED. Playsinline will let video play on mobile devices-->
                            <source src="resources/video/customer-service/hq-h264-140.mp4" type="video/mp4">
                        </video>
                     </div>
@@ -257,20 +255,14 @@
 
                 <div class="col-lg-7 my-auto contact-form">
                     <form class="needs-validation" novalidate>
-                        <div class="row">
-                          <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Name" placeholder="Name" value="" required>
                             <div class="invalid-feedback">
-                              Valid first name is required.
+                              Valid name is required.
                             </div>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
-                            <div class="invalid-feedback">
-                              Valid last name is required.
-                            </div>
-                          </div>
                         </div>
+
 
                         <div class="mb-3">
                             <input type="email" class="form-control" id="email" placeholder="Email Address" required>
@@ -305,11 +297,6 @@
         <footer class="container">
             <div class="my-5 pt-5">
                 <p class="mb-1">&copy; 2021 AIForceOne Inc.</p>
-                <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacy</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Support</a></li>
-                </ul>
             </div>
         </footer>
 
@@ -319,6 +306,7 @@
          <!-- jQuery and Bootstrap Bundle via CDN (includes Popper) -->
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+         <script src="resources/js/script.js"></script>
     </body>
 </html>
 

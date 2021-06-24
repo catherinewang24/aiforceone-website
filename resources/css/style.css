@@ -1,4 +1,8 @@
- /*{ border: 1px solid black; } */
+/*{ border: 1px solid black; } */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #F9F8F7;
@@ -10,12 +14,12 @@ body {
 
 
 h1, h2, h3, h4, h5 {
-    color: #54575a;
+    color: #56595C;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 3.8rem;
+    font-size: 4.3rem;
 }
 
 h2 {
@@ -34,21 +38,27 @@ h4 {
 }
 
 p {
-    color: #54575a;
+    color: #6E7272;
+    font-size: 1.1rem;
 }
 
-.jumbotron p {
+.jumbotron p{
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+   /* margin-top: 1.5rem; */
 }
 
-.introduction p, .crypto p {
+
+   /*
+.crypto p, .it-services p {
     font-size: 1.2rem;
 }
 
-.intro-text p {
-    padding-right: 50px;
+*/
+
+.introduction p{
+    font-size: 1.3rem;
 }
+
 
 .p-bold-sm {
     color: #54575a;
@@ -56,13 +66,22 @@ p {
     font-size: 1.3rem;
 }
 
+.card-clear p, .it-main p, .contact-header p {
+    font-size: 1.3rem;
+}
+
+footer p {
+    font-weight: 500;
+}
+
 /* ----------------------------*/
 /* ---------Navigation---------*/
 /* ----------------------------*/
 
+
 a {
     color: #5c5f63;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a:hover {
@@ -77,7 +96,6 @@ a:hover {
 
 .navbar {                                               /* To change navbar colour and make it a little transparent*/
     background-color:#fff;
-    padding: 1rem 1rem;                        /* To add padding on top and bottom, left and right of navbar*/
 }
 
 .navbar-nav > li{                          /* To add more white space on the left and right of the links in the navbar*/
@@ -85,9 +103,43 @@ a:hover {
     padding-right:15px;
 }
 
-.navbar-toggler {                          /* To turn off the navbar-toggler border (hamburger icon on smartphones) */
+.navbar-toggler, .dropdown-menu {                          /* To turn off the navbar-toggler border (hamburger icon on smartphones) */
     border: none;
     outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #5c5f63;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .white-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .white-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .white-link:focus {
+    color: #fff;
+}
+
+
+/* ----------------------------*/
+/* -----------Scroll-----------*/
+/* ----------------------------*/
+
+/* To add padding to top of screen so when you click the navigation links, the navigation bar won't block the top section off*/
+#crypto::before,
+#it::before,
+#contact::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -130px; 
+    height: 130px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 /* ----------------------------*/
@@ -116,11 +168,6 @@ a:hover {
 /* -------Introduction---------*/
 /* ----------------------------*/
 
-.margin-b {
-    margin-bottom: 2.5rem;
-}
-
-
 
 
 
@@ -146,30 +193,16 @@ a:hover {
     padding: 0rem;
 }
 
-.card-blue, .card-yellow, .card-green{
+.card-grey {
     border-radius: 15px;
     padding: 3rem;
+    background-color:#EEEDEA;                      /* eedbd7; yellow:#ffedb2   blue:#C1D0EE   green:b5d4cc  */
 }
-
 
 
 .card-clear {
     background-color: rgba(250, 235, 215, 0);
 }
-
-.card-blue {
-    background-color: #adbffd;    
-}
-
-.card-green {
-    background-color:#B5D4CC;      
-}
-
-.card-yellow{
-    background-color:#EEEDEA;                      /* eedbd7; yellow:#ffedb2   blue:#C1D0EE   green:b5d4cc  */
-}
-
-
 
 /* ----------------------------*/
 /* ----------Crypto------------*/
@@ -183,13 +216,7 @@ a:hover {
 
 .it-consulting {
     padding: 2rem;
-    background-color: #E6E5E5; /*#E6E5E5 dfe6fe*/
-    border-radius: 15px;
-}
-
-.analytics-consulting {
-    padding: 2rem;
-    background-color: #fff1c3; 
+    background-color: #EEEDEA; /*#E6E5E5 dfe6fe*/
     border-radius: 15px;
 }
 
@@ -332,7 +359,7 @@ a:hover {
 /* ----------------------------*/
 
 
-/* max-width: 768px = up to tablet screen size. I cut all the desktop px in half, eg: margin-bottom: 60px on desktop, margin-bottom: 30px on tablet and under*/
+/* max-width: 768px = up to tablet screen size (aka phone screen size). I cut all the desktop px in half, eg: margin-bottom: 60px on desktop, margin-bottom: 30px on tablet and under*/
 @media (max-width: 767.98px) {
     .card-columns {
         column-count: 1;
@@ -362,11 +389,16 @@ a:hover {
 
     .jumbotron p {
         font-size: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
     
-    .introduction p, .crypto p {
+    .introduction p, .crypto p, .it-main p, .it-services p, .customer p, .safety p, .contact p {
         font-size: 1rem;
+    }
+
+    .jumbotron p, .contact p, .it-main p, .customer p, .safety p {
+        padding-left: 2rem;
+        padding-right:2rem;
     }
     
     .intro-text p {
@@ -379,6 +411,24 @@ a:hover {
         font-size: 1rem;
     }
 
+    .card-clear p {
+        padding: 0 2rem;
+    }
+
+    .jumbotron {
+        padding-top: 4rem;
+    }
+
+    /*to make padding around card smaller for phones*/
+    .card-grey {
+        padding: 2rem;
+    }
+
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 1rem;
+    }
+    
+    
 }
 
 
@@ -398,11 +448,6 @@ a:hover {
     padding-left: 15%;
 }
 
- /*
-.it-text {
-    padding-right: 4rem;
-} 
-*/
  /* To create a smaller width than the original "container" from bootstrap only on desktop*/
 
 .small-container {                 
@@ -417,6 +462,7 @@ a:hover {
     padding-right: 150px;
 }
 
+
 .card-columns .card-clear {         /* To add a margin on the bottom of the card-clear AKA the title of the crypto*/
     margin-bottom: 80px;
 }
@@ -425,8 +471,8 @@ a:hover {
     padding-left: 100px;
 }
 
-.white-text {
-    margin-right: 7rem;
+.padded-text {
+    padding-right: 9rem;
 }
 
 .contact-header {
@@ -437,17 +483,37 @@ a:hover {
 .btn-primary {
     padding: .7rem 2.3rem;          /* To add padding on the "contact us" button on jumbotron*/
 }
-    
+
+.introduction p {
+    padding-right: 7rem;
+    line-height: 2rem;
+}
+
+.card-clear p {
+    padding-right: 13rem;
+}
+
+ /* To add hover over dropdown menu*/
+/*
+.navbar .nav-item .dropdown-menu{ display: none; }
+.navbar .nav-item:hover .nav-link{   }
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
+.navbar .nav-item .dropdown-menu{ margin-top:0; }
+*/
+
 }
 
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 767.98px) and (max-width: 991.98px) {          
+@media (min-width: 768px) and (max-width: 991.98px) {          
 
     .card-columns {                 
         column-count: 1;
     }
-    
+
+    .both-padded-text {
+        padding: 0 6rem;
+    }
     
 }
 
@@ -463,7 +529,7 @@ a:hover {
     .customer .fixed-width,
     .safety .fixed-width {     /* To make the images in "Customer" and "Safety" section not responsive and fixed width instead, so when you shrink the browser, the image doesn't scale up*/
         height: auto;
-        max-width: 280px;
+        max-width: 280px;      /* 335px is the exact size of the responsive image on the website using developer tools*/
     }
 
     .it-consulting .fixed-width,
@@ -488,4 +554,9 @@ a:hover {
         margin-top: 350px;
         margin-bottom: 370px;
     }
+
+    .navbar {   
+        padding: 1rem 1rem;                        /* To add padding on top and bottom, left and right of navbar*/
+    }
+        
 }
