@@ -13,6 +13,19 @@
         <link rel="stylesheet" href="resources/css/style.css">
 
         <title>AIForceOne</title>
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#0026ff">
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="AIForceOne">
+        <meta name="application-name" content="AIForceOne">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         
     </head>
 
@@ -194,7 +207,7 @@
         <section class="container safety small-container">
             <div class="row">
                 <div class="col-lg-6 text-center">
-                    <img src="resources/images/security/safe-5.png" class="img-fluid fixed-width" alt="chat bubbles">
+                    <img src="resources/images/security/safe-6.png" class="img-fluid fixed-width" alt="chat bubbles">
                 </div>
                 <div class="col-lg-6 my-auto shrink-padding-l text-center text-lg-left">
                     <h2>Security is our top priority</h2>
@@ -254,10 +267,10 @@
                 </div>
 
                 <div class="col-lg-7 my-auto contact-form">
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" method="post" action="contact-form-process.php" novalidate>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="Name" placeholder="Name" value="" required>
+                            <input type="text" class="form-control" id="Name" name="Name" placeholder="Name" value="" required>
                             <div class="invalid-feedback">
                               Valid name is required.
                             </div>
@@ -265,14 +278,14 @@
 
 
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                            <input type="email" class="form-control" id="Email" name="Email" placeholder="Email Address" required>
                             <div class="invalid-feedback">
                               Please enter a valid email address.
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <select class="custom-select d-block w-100" id="reason" required>
+                            <select class="custom-select d-block w-100" id="Reason" name="Reason" required>
                               <option value="">How can we help?</option>
                               <option>Cryptocurrency Services</option>
                               <option>IT Services</option>
@@ -284,7 +297,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" required></textarea>
+                            <textarea class="form-control" id="Message" name="Message" placeholder="Message" maxlength="3000" rows="3" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-light btn-block">Submit</button>
